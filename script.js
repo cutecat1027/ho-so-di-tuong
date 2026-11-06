@@ -18,15 +18,14 @@ const DATA = {
   1: {
     title: "Một Thành Phố Khác",
     lines: [
-      ["mc", "Cửa sổ vát góc, tủ lưu trữ màu xám, rồi cả mấy cỗ máy không rõ tên nữa..."],
-      ["mc", "Nơi được tái hiện trong khối cầu ký ức này là ở đâu vậy nhỉ?"],
-      ["xavier", "Chắc là một văn phòng."],
-      ["xavier", "Khung cửa sổ chữ L kết hợp với độ cao của tòa nhà có thể quan sát rộng hơn."],
-      ["xavier", "Còn về phần mấy món vũ khí đặt trên bàn và dãy tủ lưu trữ lớn dọc theo tường..."],
-      ["xavier", "Văn phòng này khả năng cao là của lực lượng hành pháp của thành phố."],
-      ["mc", "Anh quan sát tỉ mỉ thật đó. Ngay cả vụ góc nhìn rộng mà anh cũng để ý tới nữa!"],
-      ["xavier", "Góc nhìn đắc địa không chỉ giúp ích để truy bắt tội phạm thôi đâu."],
-      ["xavier", "Nó còn rất hợp để tăm tia xem tan làm nên đi ăn khuya ở đâu nữa."],
+      ["ml", "Dù được chế tạo từ những vật liệu tiên tiến, vũ khí của họ cũng chẳng có gì đặc biệt. Chán thật đấy."],
+      ["mc", "Có khi nào thế giới này ổn định đến mức chẳng cần đến vũ khí tối tân không?"],
+      ["ml", "Đèn đuốc thành phố sáng trưng, vậy mà ngay góc phố đã là những khu ổ chuột. Nước bẩn ở khắp nơi, người dân thì sống chen chúc nhau."],
+      ["ml", "Sự chênh lệch như thế chính là mảnh đất màu mỡ cho bạo lực sinh sôi."],
+      ["mc", "Nghe có vẻ khá giống Khu N109 nhỉ."],
+      ["ml", "Không cháy nổ, không đấu súng, đến một tay buôn vũ khí cũng chẳng thấy đâu."],
+      ["ml", "Quan trọng hơn, nơi này còn thiếu một người nào đó suốt ngày thích ra lệnh cho anh."],
+      ["ml", "Nếu Khu N109 cũng nhàm chán đến thế, Onychinus đã chuyển địa bàn từ lâu rồi."],
     ],
   },
   2: {
