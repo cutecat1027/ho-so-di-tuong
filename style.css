@@ -14,20 +14,25 @@ button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inhe
 img{display:block}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
+
 .stage {
   position: relative;
   width: 100%;
+  height: 100vh;
   height: 100dvh;
   overflow: hidden;
-  background: #07030f;
+  background-color: #07030f;
 }
+
+/* Ảnh nền PC */
 .art {
   position: absolute;
   inset: 0;
+
   width: 100%;
   height: 100%;
 
-  background-image: url("assets/home.png");
+  background-image: url("assets/home-pc.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
