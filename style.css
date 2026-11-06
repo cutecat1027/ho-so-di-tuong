@@ -38,12 +38,13 @@ img{display:block}
   background-repeat: no-repeat;
 }
 
-@media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
-.snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
-.snd img{width:100%;height:100%;object-fit:contain}
-.snd.on .off,.snd:not(.on) .on{display:none}
-.rec{position:absolute;left:var(--rec-x);top:var(--rec-y);width:var(--rec-w)}
-.rec img{width:100%}
+/* Mobile */
+@media (max-width: 767px) {
+  .art {
+    background-image: url("assets/home.png");
+    background-position: center center;
+  }
+}
 
 /* ===== POPUP ANOMALY RECORD ===== */
 .overlay{
