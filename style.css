@@ -14,7 +14,7 @@ button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inhe
 img{display:block}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
-.stage{position:fixed;inset:0;overflow:hidden;background:#07030f}
+.stage{position:relative;inset:0;overflow:hidden;background:#07030f}
 .art{
   /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
   --ar:.5625; --fx:.9; --fy:.5;
