@@ -1,18 +1,18 @@
 /* ===== NỘI DUNG: DATA[số chapter], đếm từ 0 (0 = chapter 01 ... 9 = chapter 10) ===== */
-const NAMES = { mc: "MC", xavier: "Sylus" };
+const NAMES = { mc: "MC", ml: "Sylus" };
 const DATA = {
   0: {
     title: "Khối Cầu Thủy Tinh",
     lines: [
-      ["Sylus", "Chú ý đến những dao động năng lượng xung quanh những quả cầu này. Đừng đến gần quá"],
+      ["ml", "Chú ý đến những dao động năng lượng xung quanh những quả cầu này. Đừng đến gần quá"],
       ["mc", "Muộn rồi... Em vừa bị một loạt những ảo ảnh kỳ lạ tấn công"],
-      ["Sylus", "Tsk, tsk... Hiệp Hội Thợ Săn của em đúng là ám ảnh với mấy dao động Metaflux nhỉ."],
-      ["Sylus", "Chỉ cần mang chúng về là có thể coi như xong việc phải không?"],
+      ["ml", "Tsk, tsk... Hiệp Hội Thợ Săn của em đúng là ám ảnh với mấy dao động Metaflux nhỉ."],
+      ["ml", "Chỉ cần mang chúng về là có thể coi như xong việc phải không?"],
       ["mc", "Lòng tự tôn của một Thợ săn không cho phép em kết thúc cuộc điều tra này một cách qua loa như thế đâu."],
       ["mc", "Dù gì thì chúng ta cũng đã đến tận đây rồi. Chi bằng cứ lần theo những manh mối bên trong mấy quả cầu này để tìm ra chủ nhân của chúng đi."],
-      ["Sylus", "Hóa ra đây là lý do mà em cứ tăng ca mãi không nghỉ đấy à, mèo nhỏ. Được rồi, anh sẽ đi cùng em."],
-      ["Sylus", "Nhìn gì chứ? Đây đâu phải lần đầu anh làm việc như thế này."],
-      ["Sylus", "Vậy em định bắt đầu cuộc điều tra từ đâu đây?"],
+      ["ml", "Hóa ra đây là lý do mà em cứ tăng ca mãi không nghỉ đấy à, mèo nhỏ. Được rồi, anh sẽ đi cùng em."],
+      ["ml", "Nhìn gì chứ? Đây đâu phải lần đầu anh làm việc như thế này."],
+      ["ml", "Vậy em định bắt đầu cuộc điều tra từ đâu đây?"],
     ],
   },
   1: {
