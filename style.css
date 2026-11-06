@@ -47,10 +47,10 @@ img{display:block}
 .nums::-webkit-scrollbar{display:none}
 .num{
   flex:0 0 20%;position:relative;color:rgba(255,255,255,.75);font-size:calc(var(--u)*4.4);
-  background:repeating-linear-gradient(90deg,rgba(255,255,255,.25) 0 1px,transparent 1px 7px) bottom/100% 5px no-repeat;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.25) 0 1px,transparent 1px 7px) bottom/100% 6px no-repeat;
 }
 .num{display:grid;place-items:center}
-.num span{position:relative;padding:0 .35em;line-height:1.25}
+.num span{position:relative;padding:0 .25em;line-height:1.25}
 .num.active{color:#fff}
 .num.active span{box-shadow:inset 0 0 0 2px var(--yellow);background:rgba(232,217,74,.15)}
 .num.active span::before{content:"";position:absolute;left:50%;top:-.55em;transform:translateX(-50%);border:5px solid transparent;border-top-color:#f06ac8}
