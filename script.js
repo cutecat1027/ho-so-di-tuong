@@ -1,5 +1,5 @@
 /* ===== NỘI DUNG: DATA[số chapter], đếm từ 0 (0 = chapter 01 ... 9 = chapter 10) ===== */
-const NAMES = { mc: "MC", sylus: "Sylus" };
+const NAMES = { mc: "MC", xavier: "Sylus" };
 const DATA = {
   0: {
     title: "Khối Cầu Thủy Tinh",
