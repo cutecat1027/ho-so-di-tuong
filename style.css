@@ -14,14 +14,18 @@ button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inhe
 img{display:block}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
-.stage{position:static;inset:0;overflow:hidden;background:#07030f}
+.stage {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  background: #07030f;
+}
 .art{
   /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
-  --ar:.44973; --fx:.9; --fy:.5;
-  --w:max(100vw,calc(100dvh*var(--ar))); --h:max(100dvh,calc(100vw/var(--ar)));
-  position:absolute;width:var(--w);height:var(--h);
-  left:calc((100vw - var(--w))*var(--fx));top:calc((100dvh - var(--h))*var(--fy));
-  background:url(assets/home.png) center/100% 100% no-repeat;
+    width: 100%;
+  height: 100dvh;
+  background: url("assets/home.png") center / contain no-repeat;
+}
 }
 @media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
 .snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
