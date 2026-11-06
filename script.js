@@ -239,15 +239,3 @@ function tick(now) {
 if (!calm) requestAnimationFrame(tick);
 
 // nhạc nền (assets/music.mp3) + nút bật/tắt. Trình duyệt thường chặn tự phát nên sẽ phát ở lần chạm đầu tiên.
-function music() {
-  const bgm = new Audio("assets/music.mp3"), snd = $("#snd");
-  let userOff = false;
-  bgm.loop = true; bgm.volume = .7;
-  bgm.addEventListener("play", () => snd.classList.add("on"));
-  bgm.addEventListener("pause", () => snd.classList.remove("on"));
-  snd.onclick = () => { if (bgm.paused) { userOff = false; bgm.play().catch(() => {}); } else { userOff = true; bgm.pause(); } };
-  const go = () => { if (!userOff && bgm.paused) bgm.play().catch(() => {}); };
-  go();
-  ["pointerdown", "keydown"].forEach(ev => addEventListener(ev, e => { if (!e.target.closest?.("#snd")) go(); }, { passive: true }));
-}
-document.readyState === "complete" ? music() : addEventListener("load", music);
