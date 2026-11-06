@@ -17,7 +17,7 @@ img{display:block}
 .stage{position:relative;inset:0;overflow:hidden;background:#07030f}
 .art{
   /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
-  --ar:.44973;; --fx: 0.5; --fy:0.5;
+  --ar:.5625; --fx: 0.5; --fy:0.5;
   --w:max(100vw,calc(100dvh*var(--ar))); --h:max(100dvh,calc(100vw/var(--ar)));
   position:absolute;width:var(--w);height:var(--h);
   left:calc((100vw - var(--w))*var(--fx));top:calc((100dvh - var(--h))*var(--fy));
