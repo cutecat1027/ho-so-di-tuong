@@ -14,10 +14,10 @@ button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inhe
 img{display:block}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
-.stage{position:relative;inset:0;overflow:hidden;background:#07030f}
+.stage{position:static;inset:0;overflow:hidden;background:#07030f}
 .art{
   /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
-  --ar:.5625; --fx:.9; --fy:.5;
+  --ar:.44973; --fx:.9; --fy:.5;
   --w:max(100vw,calc(100dvh*var(--ar))); --h:max(100dvh,calc(100vw/var(--ar)));
   position:absolute;width:var(--w);height:var(--h);
   left:calc((100vw - var(--w))*var(--fx));top:calc((100dvh - var(--h))*var(--fy));
