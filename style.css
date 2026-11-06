@@ -74,7 +74,7 @@ img{display:block}
 .who{display:block;font-weight:600;font-size:calc(var(--u)*4.4);letter-spacing:.05em;margin-bottom:1.5%}
 .msg p{color:#f1e7ff;font-size:calc(var(--u)*3.7);line-height:1.45;letter-spacing:.04em}
 .msg.mc .who{text-align:right;color:var(--gold)}
-.msg.ml .who{color:var(--lav)}
+.msg.ml .who{color:var(--red)}
 .empty{color:rgba(255,255,255,.5);text-align:center;font-size:calc(var(--u)*3.6)}
 
 /* ===== HIỆU ỨNG ===== */
