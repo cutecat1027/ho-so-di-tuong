@@ -5,7 +5,7 @@
   --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
-  :root{ --rec-x:70%; --rec-y:10%; --rec-w:15.1%; }
+  :root{ --rec-x:79.4%; --rec-y:32.3%; --rec-w:15.1%; }
 }
 
 *{box-sizing:border-box;margin:0}
@@ -50,7 +50,7 @@ img{display:block}
   background:repeating-linear-gradient(90deg,rgba(255,255,255,.25) 0 1px,transparent 1px 7px) bottom/100% 6px no-repeat;
 }
 .num{display:grid;place-items:center}
-.num span{position:relative;padding:0 .25em;line-height:1.25}
+.num span{position:relative;padding:0 .35em;line-height:1.25}
 .num.active{color:#fff}
 .num.active span{box-shadow:inset 0 0 0 2px var(--yellow);background:rgba(232,217,74,.15)}
 .num.active span::before{content:"";position:absolute;left:50%;top:-.55em;transform:translateX(-50%);border:5px solid transparent;border-top-color:#f06ac8}
@@ -71,7 +71,7 @@ img{display:block}
 }
 .content::-webkit-scrollbar{display:none}
 .msg{margin-bottom:3.5%;padding:2.5% 3%;background:rgba(75,38,130,.5);border-left:1px solid rgba(255,255,255,.3);border-right:1px solid rgba(255,255,255,.3)}
-.who{display:block;font-weight:1000;font:calc(var(--u)*4.2) "nunito sans", sans-serif;letter-spacing:.05em;margin-bottom:1.5%}
+.who{display:block;font-weight:00;font:calc(var(--u)*4.2) "nunito sans", sans-serif;letter-spacing:.05em;margin-bottom:1.5%}
 .msg p{color:#f1e7ff;font:calc(var(--u)*3.4) "nunito sans", sans-serif;line-height:1.45;letter-spacing:.04em}
 .msg.mc .who{text-align:right;color:var(--gold)}
 .msg.ml .who{color:rgb(230, 81, 81)}
