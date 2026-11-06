@@ -14,38 +14,25 @@ button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inhe
 img{display:block}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
-
-.stage {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden;
-  background-color: #07030f;
+.stage{position:relative;inset:0;overflow:hidden;background:#07030f}
+.art{
+  /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
+  --ar:921 / 2048; 
+  --fx:.5; 
+  --fy:.5;
+  --w:max(100vw,calc(100dvh*var(--ar))); 
+  --h:max(100dvh,calc(100vw/var(--ar)));
+  position:absolute;width:var(--w);height:var(--h);
+  left:calc((100vw - var(--w))*var(--fx));
+  top:calc((100dvh - var(--h))*var(--fy));
+  background:url(assets/home.png) center/100% 100% no-repeat;
 }
-
-/* Ảnh nền PC */
-.art {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url("assets/home-pc.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .art {
-    background-image: url("assets/home.png");
-    background-size: cover;
-    background-position: center center;
-  }
-}
+@media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
+.snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
+.snd img{width:100%;height:100%;object-fit:contain}
+.snd.on .off,.snd:not(.on) .on{display:none}
+.rec{position:absolute;left:var(--rec-x);top:var(--rec-y);width:var(--rec-w)}
+.rec img{width:100%}
 
 /* ===== POPUP ANOMALY RECORD ===== */
 .overlay{
