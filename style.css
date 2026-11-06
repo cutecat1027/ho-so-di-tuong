@@ -2,6 +2,7 @@
 :root{
   /* nút Anomaly Record (bản điện thoại/tablet) */
   --rec-x:77%; --rec-y:19.6%; --rec-w:22.9%;
+  --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
   :root{ --rec-x:70%; --rec-y:10%; --rec-w:15.1%; }
