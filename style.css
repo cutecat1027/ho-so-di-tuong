@@ -17,16 +17,22 @@ img{display:block}
 .stage {
   position: relative;
   width: 100%;
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow: hidden;
   background: #07030f;
 }
-.art{
-  /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
-    width: 100%;
-  height: 100dvh;
-  background: url("assets/home.png") center / contain no-repeat;
+.art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("assets/home.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-}
+
 @media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
 .snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
 .snd img{width:100%;height:100%;object-fit:contain}
