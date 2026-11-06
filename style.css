@@ -71,10 +71,10 @@ img{display:block}
 }
 .content::-webkit-scrollbar{display:none}
 .msg{margin-bottom:3.5%;padding:2.5% 3%;background:rgba(75,38,130,.5);border-left:1px solid rgba(255,255,255,.3);border-right:1px solid rgba(255,255,255,.3)}
-.who{display:block;font-weight:600;font:calc(var(--u)*4.0) "nunito sans", sans-serif;letter-spacing:.05em;margin-bottom:1.5%}
-.msg p{color:#f1e7ff;font:calc(var(--u)*3.0) "nunito sans", sans-serif;line-height:1.45;letter-spacing:.04em}
+.who{display:block;font-weight:800;font:calc(var(--u)*4.2) "nunito sans", sans-serif;letter-spacing:.05em;margin-bottom:1.5%}
+.msg p{color:#f1e7ff;font:calc(var(--u)*3.4) "nunito sans", sans-serif;line-height:1.45;letter-spacing:.04em}
 .msg.mc .who{text-align:right;color:var(--gold)}
-.msg.ml .who{color:rgba(255, 36, 36, 0.5)}
+.msg.ml .who{color:rgba(190, 0, 0, 0.5)}
 .empty{color:rgba(255,255,255,.5);text-align:center;font-size:calc(var(--u)*3.6)}
 
 /* ===== HIỆU ỨNG ===== */
