@@ -1,18 +1,18 @@
 /* ===== NỘI DUNG: DATA[số chapter], đếm từ 0 (0 = chapter 01 ... 9 = chapter 10) ===== */
-const NAMES = { mc: "MC", xavier: "Xavier" };
+const NAMES = { mc: "MC", sylus: "Sylus" };
 const DATA = {
   0: {
     title: "Khối Cầu Thủy Tinh",
     lines: [
-      ["mc", "Sao tự nhiên trước mắt em lóe lên nhiều hình ảnh xa lạ thế... "],
-      ["xavier", "Anh cũng thấy nè. Chắc do tụi mình chạm vào mấy quả cầu thủy tinh này đấy."],
-      ["mc", "Ôi thảo nào. Hiệp hội nói đây là vật có thể lưu trữ ký ức và cần tụi mình mang trả lại."],
-      ["xavier", "Dao động năng lượng mà đồng hồ tụi mình ghi nhận cũng là do chúng."],
-      ["mc", "Vậy tụi mình mang chúng theo có mạo hiểm quá không...?"],
-      ["mc", "Á, Xavier! Anh cẩn thận, khoan chạm vào chúng—"],
-      ["xavier", "Không nguy hiểm gì đâu mà."],
-      ["xavier", "Anh chỉ hơi tò mò thế giới chỗ mấy quả cầu thủy tinh này trông như thế nào thôi."],
-      ["mc", "Cho em thử nữa. Nhân tiện cùng tìm lại vị chủ nhân thất lạc rồi đưa mấy quả cầu nhỏ này về nhà."],
+      ["Sylus", "Chú ý đến những dao động năng lượng xung quanh những quả cầu này. Đừng đến gần quá"],
+      ["mc", "Muộn rồi... Em vừa bị một loạt những ảo ảnh kỳ lạ tấn công"],
+      ["Sylus", "Tsk, tsk... Hiệp Hội Thợ Săn của em đúng là ám ảnh với mấy dao động Metaflux nhỉ."],
+      ["Sylus", "Chỉ cần mang chúng về là có thể coi như xong việc phải không?"],
+      ["mc", "Lòng tự tôn của một Thợ săn không cho phép em kết thúc cuộc điều tra này một cách qua loa như thế đâu."],
+      ["mc", "Dù gì thì chúng ta cũng đã đến tận đây rồi. Chi bằng cứ lần theo những manh mối bên trong mấy quả cầu này để tìm ra chủ nhân của chúng đi."],
+      ["Sylus", "Hóa ra đây là lý do mà em cứ tăng ca mãi không nghỉ đấy à, mèo nhỏ. Được rồi, anh sẽ đi cùng em."],
+      ["Sylus", "Nhìn gì chứ? Đây đâu phải lần đầu anh làm việc như thế này."],
+      ["Sylus", "Vậy em định bắt đầu cuộc điều tra từ đâu đây?"],
     ],
   },
   1: {
