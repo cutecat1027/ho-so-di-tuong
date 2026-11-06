@@ -62,7 +62,7 @@ img{display:block}
 /* tiêu đề đứng yên, chỉ .content cuộn */
 .title{
   position:absolute;left:0;width:100%;top:20.3%;text-align:center;color:#e9e4ff;
-  font:700 calc(var(--u)*4.2) "Libre Baskerville",serif;
+  font:700 calc(var(--u)*4.2) "Cormorant Garamond SemiBold",serif;
 }
 .content{
   position:absolute;left:9.9%;width:80.4%;top:25%;bottom:8.3%;overflow-y:auto;scrollbar-width:none;
