@@ -86,7 +86,7 @@ const DATA = {
     lines: [
       ["mc", "Em đã xem quá nhiều quả cầu ký ức rồi. Giờ đây, mọi thứ đều khiến em cảm thấy đáng ngờ..."],
       ["ml", "Liệu việc một thứ có thật hay không có thật sự quan trọng đến thế không?"],
-      ["mc", "Em chỉ đang tự hỏi... Nếu ký ức có thể được thêu dệt, vậy làm sao em chứng minh được rằng em thực sự là "em"?"],
+      ["mc", "Em chỉ đang tự hỏi... Nếu ký ức có thể được thêu dệt, vậy làm sao em chứng minh được rằng em thực sự là 'em'?"],
       ["ml", "Cứ cho là có ai đó thực sự đã tạo ra những ký ức của em đi."],
       ["ml", "Biết được điều đó liệu có thay đổi được điều gì trong cuộc sống của em không?"],
       ["ml", "Em đang cảm ơn người thiết kế ký ức đó sao? Chẳng phải anh mới là người có gu tốt à?"],
