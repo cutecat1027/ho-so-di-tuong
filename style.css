@@ -26,7 +26,7 @@ img{display:block}
 @media (min-aspect-ratio:1/1)
 {
   .art{
-    --ar:1920/1080;
+    --ar:1626 / 842;
     --fx:.5;
     background-image:url(assets/home-pc.png);
      background-size:100% 100%;
