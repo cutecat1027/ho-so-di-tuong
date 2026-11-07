@@ -28,6 +28,7 @@ img{display:block}
   .art{
     --ar:16/9;
     --fx:.5;
+    --fy:.5;
     background-image:url(assets/home-pc.png);
     background-position:center center;
     background-repeat:no-repeat;
