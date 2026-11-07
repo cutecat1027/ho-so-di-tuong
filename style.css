@@ -27,7 +27,7 @@ img{display:block}
 .snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
 .snd img{width:100%;height:100%;object-fit:fill}
 .snd.on .off,.snd:not(.on) .on{display:none}
-.rec{position:absolute;left:var(--rec-x);top:var(--rec-y);width:var(--rec-w)}
+.rec{position:relative;left:var(--rec-x);top:var(--rec-y);width:var(--rec-w)}
 .rec img{width:100%}
 
 /* ===== POPUP ANOMALY RECORD ===== */
