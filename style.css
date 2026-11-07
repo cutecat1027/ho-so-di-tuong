@@ -1,61 +1,11 @@
 /* ===== CHỈNH VỊ TRÍ Ở ĐÂY (đơn vị % theo kích thước ảnh nền) ===== */
-:root {
-  /* Ảnh điện thoại */
-  --ar: 921 / 2048;
-
-  /* Vị trí nút trên ảnh gốc */
-  --rec-x: 77%;
-  --rec-y: 19.6%;
-  --rec-w: 22.9%;
-}
-
-/* Khung toàn màn hình */
-.stage {
-  position: relative;
-  width: 100%;
-  height: 100dvh;
-  overflow: hidden;
-  background: #07030f;
-}
-
-/* Ảnh và nút dùng chung hệ tọa độ */
-.art {
-  --w: max(100vw, calc(100dvh * var(--ar)));
-  --h: max(100dvh, calc(100vw / var(--ar)));
-
-  position: absolute;
-
-  width: var(--w);
-  height: var(--h);
-
-  left: calc((100% - var(--w)) / 2);
-  top: calc((100% - var(--h)) / 2);
-
-  background: url("assets/home.png")
-              center / 100% 100% no-repeat;
-}
-/* Nút Anomaly Record */
-.rec {
-  position: absolute;
-
-  left: var(--rec-x);
-  top: var(--rec-y);
-  width: var(--rec-w);
-
-  z-index: 5;
-}
-
-.rec img {
-  display: block;
-  width: 100%;
-  height: auto;
+:root{
+  /* nút Anomaly Record (bản điện thoại/tablet) */
+  --rec-x:77%; --rec-y:19.6%; --rec-w:22.9%;
+  --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
-   :root {
-    --rec-x: 79.4%;
-    --rec-y: 32.3%;
-    --rec-w: 15.1%;
-  }
+  :root{ --rec-x:79.4%; --rec-y:32.3%; --rec-w:15.1%; }
 }
 
 *{box-sizing:border-box;margin:0}
@@ -73,7 +23,13 @@ img{display:block}
   left:calc((100vw - var(--w))*var(--fx));top:calc((100dvh - var(--h))*var(--fy));
   background:url(assets/home.png) center/100% 100% no-repeat;
 }
-@media (min-aspect-ratio:1/1){.art{--ar:1920/1080;--fx:.5;background-image:url(assets/home-pc.png)}}
+@media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
+.snd{position:absolute;left:max(14px,env(safe-area-inset-left));top:max(14px,env(safe-area-inset-top));width:clamp(40px,8vw,64px);aspect-ratio:1;z-index:5}
+.snd img{width:100%;height:100%;object-fit:contain}
+.snd.on .off,.snd:not(.on) .on{display:none}
+.rec{position:absolute;left:var(--rec-x);top:var(--rec-y);width:var(--rec-w)}
+.rec img{width:100%}
+
 
 
 /* ===== POPUP ANOMALY RECORD ===== */
