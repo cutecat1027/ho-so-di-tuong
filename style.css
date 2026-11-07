@@ -5,7 +5,7 @@
   --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
-  :root{ --rec-x:65.9%; --rec-y:17.1%; --rec-w:15.1%; }
+  :root{ --rec-x:63%; --rec-y:12%; --rec-w:15.1%; }
 }
 
 *{box-sizing:border-box;margin:0}
