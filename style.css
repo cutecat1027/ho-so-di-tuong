@@ -1,8 +1,8 @@
 /* ===== CHỈNH VỊ TRÍ Ở ĐÂY (đơn vị % theo kích thước ảnh nền) ===== */
 :root{
   /* nút Anomaly Record (bản điện thoại/tablet) */
-  --rec-x:50%; 
-  --rec-y:10%; 
+  --rec-x:60%; 
+  --rec-y:7%; 
   --rec-w:40%;
 
   --yellow:#e8d94a; 
