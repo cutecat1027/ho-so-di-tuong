@@ -29,7 +29,7 @@ img{display:block}
     --ar:1626 / 842;
     --fx:.5;
     background-image:url(assets/home-pc.png);
-     background-size:100% 100%;
+     background-size:90% 100%;
     background-position:center center;
     background-repeat:no-repeat;
   }
