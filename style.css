@@ -1,62 +1,89 @@
 /* ===== CHỈNH VỊ TRÍ Ở ĐÂY (đơn vị % theo kích thước ảnh nền) ===== */
 :root{
   /* nút Anomaly Record (bản điện thoại/tablet) */
-  --rec-x:77%; --rec-y:19.6%; --rec-w:22.9%;
-  --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
+  --rec-x:60%; 
+  --rec-y:15%; 
+  --rec-w:22.9%;
+
+  --yellow:#e8d94a; 
+  --gold:#f3dcae; 
+  --lav:#b9b6ff;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
-  :root{ --rec-x:64%; --rec-y:12%; --rec-w:15.1%; }
+  :root{ 
+    --rec-x:60%; 
+    --rec-y:20%; 
+    --rec-w:15.1%; 
+  }
 }
 
-*{box-sizing:border-box;margin:0}
-body{min-height:100dvh;display:grid;place-items:center;background:#07030f;font-family:"Exo 2",sans-serif;overflow:hidden}
-button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit}
-img{display:block}
+*{
+  box-sizing:border-box;
+  margin:0}
+body{
+  min-height:100dvh;
+  display:grid;
+  place-items:center;
+  background:#07030f;
+  font-family:"Exo 2",sans-serif;
+  overflow:hidden}
+button{
+  background:none;
+  border:0;
+  padding:0;
+  cursor:pointer;
+  font:inherit;
+  color:inherit
+}
+img{
+  display:block
+}
 
 /* ===== NỀN: phủ kín màn hình, giữ đúng tỉ lệ ảnh ===== */
-.stage{position:fixed;inset:0;overflow:hidden;background:#07030f}
+.stage{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  background:#07030f}
 .art{
   /* --fx / --fy: khi ảnh bị cắt bớt, 0 = giữ mép trái/trên, 1 = giữ mép phải/dưới */
-  --ar:.5625; --fx:.9; --fy:.5;
-  --w:max(100vw,calc(100dvh*var(--ar))); --h:max(100dvh,calc(100vw/var(--ar)));
-  position:absolute;width:var(--w);height:var(--h);
-  left:calc((100vw - var(--w))*var(--fx));top:calc((100dvh - var(--h))*var(--fy));
+  --ar:.5625; 
+  --fx:.9; 
+  --fy:.5;
+  --w:max(100vw,calc(100dvh*var(--ar))); 
+  --h:max(100dvh,calc(100vw/var(--ar)));
+  position:absolute;
+  width:var(--w);
+  height:var(--h);
+
+  left:calc((100vw - var(--w))*var(--fx));
+  top:calc((100dvh - var(--h))*var(--fy));
+
   background:url(assets/home.png) center/100% 100% no-repeat;
 }
 @media (min-aspect-ratio:1/1)
-{
-  .art{
-    --ar:16/9;
-    --fx:.5;
-    background-image:url(assets/home-pc.png);
-    background-size:100% 100%;
-    background-position:center center;
-    background-repeat:no-repeat;
-  }
-}
+{.art{
+  --ar:1.7778;
+  --fx:.5;
+  background-image:url(assets/home-pc.png)}}
 .snd{
-    position:absolute;
-    left:max(14px,env(safe-area-inset-left));
-    top:max(14px,env(safe-area-inset-top));
-    width:clamp(40px,8vw,64px);
-    aspect-ratio:1;z-index:5
-  }
+  position:absolute;
+  left:max(14px,env(safe-area-inset-left));
+  top:max(14px,env(safe-area-inset-top));
+  width:clamp(40px,8vw,64px);
+  aspect-ratio:1;
+  z-index:5
+}
 .snd img{
   width:100%;
   height:100%;
-  object-fit:contain
-}
-.snd.on .off,
-.snd:not(.on) 
-.on{
-  display:none
-}
+  object-fit:contain}
+.snd.on .off,.snd:not(.on) .on{display:none}
 .rec{
   position:absolute;
   left:var(--rec-x);
   top:var(--rec-y);
-  width:var(--rec-w)
-}
+  width:var(--rec-w)}
 .rec img{
   width:100%
 }
