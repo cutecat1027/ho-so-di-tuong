@@ -26,30 +26,13 @@ img{display:block}
 @media (min-aspect-ratio:1/1)
 {
   .art{
-    --ar:1.7778;
+    --ar:1920/1080;
     --fx:.5;
     background-image:url(assets/home-pc.png);
      background-size:120% 100%;
     background-position:center center;
     background-repeat:no-repeat;
   }
-}
-.snd{
-    position:absolute;
-    left:max(14px,env(safe-area-inset-left));
-    top:max(14px,env(safe-area-inset-top));
-    width:clamp(40px,8vw,64px);
-    aspect-ratio:1;z-index:5
-  }
-.snd img{
-  width:100%;
-  height:100%;
-  object-fit:contain
-}
-.snd.on .off,
-.snd:not(.on) 
-.on{
-  display:none
 }
 .rec{
   position:absolute;
