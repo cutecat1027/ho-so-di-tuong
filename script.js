@@ -49,7 +49,7 @@ const DATA = {
       ["mc", "Nhưng kết quả của anh lại là 'không thể hoàn thành bài kiểm tra' mà."],
       ["ml", "Anh chẳng thể ép mình lặp đi lặp lại mấy lời vô nghĩa đó."],
       ["mc", "Cũng có lý. Bài kiểm tra này vốn đâu dành cho những người chẳng bao giờ chịu tuân theo quy tắc như anh."],
-      ["mc", "Hay là để em thiết kế riêng một bài kiểm tra cho anh nhé?"],
+      ["mc", "Hay là để em thiết kế riêng một bài kiểm tra chó anh nhé?"],
       ["ml", "Nụ cười tinh quái đó... Em định dùng bài kiểm tra này để bắt anh nói điều gì sao?"],
       ["ml", "Lời đường mật, những câu tâng bốc, hay lời tỏ tình... Chẳng phải em đã nghe anh nói hết cả rồi sao?"],      
     ],
