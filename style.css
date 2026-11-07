@@ -2,7 +2,7 @@
 :root{
   /* nút Anomaly Record (bản điện thoại/tablet) */
   --rec-x:50%; 
-  --rec-y:15%; 
+  --rec-y:10%; 
   --rec-w:40%;
 
   --yellow:#e8d94a; 
