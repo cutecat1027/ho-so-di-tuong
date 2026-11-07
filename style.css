@@ -1,10 +1,54 @@
 /* ===== CHỈNH VỊ TRÍ Ở ĐÂY (đơn vị % theo kích thước ảnh nền) ===== */
-:root{
-  /* nút Anomaly Record (bản điện thoại/tablet) */
-    --rec-x: 77%;
+:root {
+  /* Ảnh điện thoại */
+  --ar: 921 / 2048;
+
+  /* Vị trí nút trên ảnh gốc */
+  --rec-x: 77%;
   --rec-y: 19.6%;
-  --rec-w: 10.9%;
-  --yellow:#e8d94a; --gold:#f3dcae; --lav:#b9b6ff;
+  --rec-w: 22.9%;
+}
+
+/* Khung toàn màn hình */
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: #07030f;
+}
+
+/* Ảnh và nút dùng chung hệ tọa độ */
+.art {
+  --w: max(100vw, calc(100dvh * var(--ar)));
+  --h: max(100dvh, calc(100vw / var(--ar)));
+
+  position: absolute;
+
+  width: var(--w);
+  height: var(--h);
+
+  left: calc((100% - var(--w)) / 2);
+  top: calc((100% - var(--h)) / 2);
+
+  background: url("assets/home.png")
+              center / 100% 100% no-repeat;
+}
+/* Nút Anomaly Record */
+.rec {
+  position: absolute;
+
+  left: var(--rec-x);
+  top: var(--rec-y);
+  width: var(--rec-w);
+
+  z-index: 5;
+}
+
+.rec img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 @media (min-aspect-ratio:1/1){ /* bản laptop */
    :root {
