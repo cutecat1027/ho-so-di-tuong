@@ -3,7 +3,7 @@
   /* nút Anomaly Record (bản điện thoại/tablet) */
   --rec-x:60%; 
   --rec-y:16%; 
-  --rec-w:30%;
+  --rec-w:20%;
 
   --yellow:#e8d94a; 
   --gold:#f3dcae; 
@@ -13,7 +13,7 @@
 @media (min-aspect-ratio:1/1){ /* bản laptop */
   :root{ --rec-x:79.4%; 
     --rec-y:32.3%; 
-    --rec-w:15.1%; }
+    --rec-w:8%; }
 }
 
 *{box-sizing:border-box;
@@ -53,7 +53,7 @@ img{display:block}
 
   left:calc((100vw - var(--w))*var(--fx));
   top:calc((100dvh - var(--h))*var(--fy));
-  
+
   background:url(assets/home.png) center/100% 100% no-repeat;
 }
 @media (min-aspect-ratio:1/1){.art{--ar:1.7778;--fx:.5;background-image:url(assets/home-pc.png)}}
